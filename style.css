@@ -1,0 +1,352 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9px;    
+}
+
+@media screen and (min-width:557px){
+    html{
+        font-size:15px;
+    }
+}
+@media screen and (min-width:800px){
+    html{
+        font-size:20px;
+    }
+    main .port-col{
+        width: 49%;
+    }
+}
+@media screen and (min-width:1150px){
+    html{
+        font-size:25px;
+    }
+    main .port-col{
+        width: 32.96%;
+    }
+}
+@media screen and (min-width:1500px){
+    html{
+        font-size:30px;
+    }
+}
+@media screen and (min-width:1921px){
+    html{
+        font-size:40px;
+    }
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+li{
+    list-style: none;
+}
+
+/*header*/
+header{
+    z-index: 500;    
+    width: 100%;
+}
+.container{
+    position: relative;
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+    background-color: #2E3D52;
+    color:#E7E7F0;
+}
+.container a h1{
+    display: inline;
+}
+.title{
+    margin-left:1rem;
+    display: inline;
+}
+.title:hover{
+    cursor: pointer;
+}
+.menuitem a{
+   display:none;
+}
+.navs i{
+    font-size:3rem;
+    position: absolute;    
+    right:2rem;
+    top:1.3rem;
+}
+.icon a:hover{
+    color:#36BA9C;
+}
+.menuitem{
+    text-align: center;
+    margin:0.5rem 0;
+    font-size:1.5rem;
+}
+/*header*/
+
+/*main*/
+main{
+    text-align: center;
+    position: relative;
+    background-color:#36BA9C;
+}
+
+.first{
+    position: relative;
+}
+.first img{
+    width: 20rem;
+    border-radius: 50%;
+    margin-top:10rem;
+}
+.first h2{
+    font-size: 4rem;
+    color:whitesmoke
+} 
+.first h3{
+    font-size: 1.3rem;
+    color:whitesmoke;
+}
+.first i{
+    font-size:3rem;
+    color:whitesmoke;
+}
+.first hr{
+    border:none;
+    border-top:.2rem solid whitesmoke;
+    max-width: 25rem;
+    position: relative;
+    margin:2.5rem auto;
+}
+.first i{
+    position: relative;
+    top:-4rem;
+    background-color:#36BA9C;
+    padding:0 0.7rem;
+}
+.first h3{
+    margin-bottom: 5rem;
+}
+
+
+.portfolio{
+    background-color: whitesmoke;
+    padding:5rem 3rem; 
+    margin:0 0;
+}
+.portfolio h2{
+    color:#2E3D52;    
+    font-size:3rem;
+}
+.portfolio hr{
+    border:none;
+    border-top:.2rem solid #2E3D52;
+    max-width: 25rem;
+    position: relative;
+    margin:2.5rem auto;
+}
+.portfolio i{
+    position: relative;
+    top:-4rem;  
+    padding:0 0.7rem;
+    background-color: whitesmoke;
+    font-size:3rem;
+}
+.port-col{
+    width: 100%;
+    display: inline-block;
+    margin:2rem 0;
+    position: relative;
+    background-color: brown;
+    padding:0.5rem 3rem;    
+}
+.port-col img{
+    width: 100%;
+    border-radius:50%;    
+}
+.img-overlay{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: #36BA9C;
+    transition:opacity .5s;
+    opacity: 0;
+    
+}
+.overlay-icon{
+    color:#fff;
+    font-size:2rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+.overlay-icon i{
+    color:white;
+    background-color: #36BA9C;
+    top:0;
+    margin:0;
+    padding:0;
+    font-size:5rem;
+}
+.port-col:hover .img-overlay{
+    opacity: 0.7;
+}
+
+
+.about{
+    background-color:#36BA9C;
+    padding:5rem 0;
+}
+.about h2{
+    color:whitesmoke;
+    font-size:3rem;
+}
+.about h3{
+    color:whitesmoke;
+    font-size:1.3rem;
+    padding:2rem;
+    text-align:left;
+    font-weight: 300;
+    column-count: 2;
+    padding-bottom: 5rem;
+}
+.about hr{
+    border:none;
+    border-top:.2rem solid whitesmoke;
+    max-width: 25rem;
+    position: relative;
+    margin:2.5rem auto;
+}
+.about .fa-star{
+    position: relative;
+    top:-4rem;  
+    padding:0 0.7rem;
+    background-color: #36BA9C;
+    color:whitesmoke;
+    font-size:3rem;
+}
+
+.about a{
+    padding:1.5rem;
+    
+    border:1px solid;
+    border-color:whitesmoke;
+    background-color:#36BA9C;
+    border-radius:5px;
+    font-size:1.5rem;
+    
+}
+.about a:hover{
+    background-color:#66cab3;
+    transition: 300ms;
+    cursor: pointer;
+}
+.about .download{
+    padding:0 2rem;
+}
+.about a i{
+    padding-right: 0.8rem;
+}
+
+.contact{
+    background: whitesmoke; 
+    padding:5rem 0;   
+}
+.contact h2{
+    color:#2E3D52;    
+    font-size:3rem;
+}
+.contact hr{
+    border:none;
+    border-top:.2rem solid #2E3D52;
+    max-width: 25rem;
+    position: relative;
+    margin:2.5rem auto;
+}
+.contact i{
+    position: relative;
+    top:-4rem;  
+    padding:0 0.7rem;
+    background-color: whitesmoke;
+    font-size:3rem;
+}
+.contact input{
+    color:rgba(0,0,0,.4);
+    font-size:3rem;
+    border:none;
+    background-color:whitesmoke;
+    border-bottom:1px solid rgba(0,0,0,.4);
+    display: block;
+    margin:4rem auto;
+}
+.contact button{
+    padding:1rem 4rem;
+    border:none;
+    border-radius: 4px;
+    background-color:#36BA9C;
+    color:whitesmoke;
+    font-size:2rem;
+}
+.contact button:hover{
+    background-color:#2eaa8d;
+    cursor: pointer;
+}
+/*main*/
+
+
+/*footer*/
+.infos{
+    background-color: #2E3D52;
+    text-align: center;
+}
+.col{
+    width: 100%;
+    padding: 2rem;
+}
+.col h3{
+    color:whitesmoke;
+    font-size:2rem;
+}
+.col h4{
+    color:whitesmoke;
+    font-size:1.6rem;
+}
+
+.col li{
+    display: inline-block;
+    padding-top:3rem;
+}
+.col a{
+    font-size:4rem;
+    padding:0 1rem;
+}
+.fb:hover{
+    color:#4267B2;
+}
+.ins:hover{
+    color:#C13584;
+}
+.tw:hover{
+    color:#1DA1F2;
+}
+.in:hover{
+    color:#0072b1 ;
+}
+.copyright{
+    text-align: center;
+    background-color: #1B2530;    
+}
+.copyright p,.copyright i{
+    font-size:0.8rem;
+    color: whitesmoke;
+    padding:1.3rem 0;
+}
+/*footer*/
